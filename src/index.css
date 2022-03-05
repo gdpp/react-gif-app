@@ -1,13 +1,93 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  background-color: #121212;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.title {
+  color: #91e704;
+  font-size: 4rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.form {
+  text-align: center;
+  width: 100%;
+}
+
+.input-search {
+  border-radius: 0.5rem;
+  color: gray;
+  font-size: 1.2rem;
+  height: 2rem;
+  padding: 1.2rem;
+  text-align: center;
+  width: 60%;
+}
+
+.subtitle {
+  color: #08c3f1;
+  font-size: 2rem;
+  margin: 1rem 3.5rem 0 3.5rem;
+}
+
+.loading {
+  align-items: center;
+  color: #f30341;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 1rem;
+  min-height: 55vh;
+  width: 100%;
+}
+
+.card-grid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.card {
+  background-color: #eaeaea;
+  border-radius: 0.5rem;
+  align-content: center;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+.card p {
+  color: #6707f1;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  max-height: 170px;
+  width: 100%;
 }
